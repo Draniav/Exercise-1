@@ -1,4 +1,4 @@
-# Exercice 1
+# Exercise 1
 SANIPET
 
 ## Table of contents
@@ -20,14 +20,14 @@ date of deparasitization
 2. Owner: Any patient must have a owner personal data like DNI, name, surname,cellphone and age.
 3. Employees: There are 2 types of Employees - Doctors and stylists. By default, there are only two doctors from Monday to Wednesday. From Friday to Saturday, there is another doctor. Stylists by default are 2 as well, and work from Monday to Saturday until 4PM.
 4. Appointments: There are 3 types of appointments - Medical, Surgery or Aesthetic.
-When some of them are created it must consider some data of the Pet to be  properly recognized, status of the appointment (Not started, Finished, Canceled, Absent) and the date within hour of the appointment. The status of the appointments when it is created by default is ‘Not started’.
+When some of them are created it must consider some data of the Pet to be  properly recognized, status of the appointment (Not started, Finished, Canceled, Absent) and the date within hour of the appointment. The status of the appointments when it is created by default is ï¿½Not startedï¿½.
 5. Medicine: Each of them has a name, presentation (Pills, syrup, pet-care), usage (Veterinarian/Human), quantity (usually in g or ml) of the medicine and stock available.
 
 
 ## Archives
 
-> ### Employees          : Archive what contains the classes and subclases employees
-> ### Patiente           : Archive what contains the classes and subclases 
+> ### Employees          : Archive what contains the classes and subclasses employees
+> ### Patient           : Archive what contains the classes and subclasses 
 
 ## IDE
 
@@ -36,7 +36,7 @@ The workshop was developed using IntelliJ Express.
 
 
 ## Status
->in develope
+>in develop
 
->last update 7/6/2022.   
+>last update 7/6/2022.    
 
