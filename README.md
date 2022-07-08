@@ -16,7 +16,7 @@ Considerations:
 
 1. Patient: Must be Cats or Dogs. a clinic historic number
 of 6 digits automatically. Plus, the name, breed, Owner, vaccines status, and last
-date of deparasitization
+date of parasitization
 2. Owner: Any patient must have a owner personal data like DNI, name, surname,cellphone and age.
 3. Employees: There are 2 types of Employees - Doctors and stylists. By default, there are only two doctors from Monday to Wednesday. From Friday to Saturday, there is another doctor. Stylists by default are 2 as well, and work from Monday to Saturday until 4PM.
 4. Appointments: There are 3 types of appointments - Medical, Surgery or Aesthetic.
@@ -38,5 +38,5 @@ The workshop was developed using IntelliJ Express.
 ## Status
 >in develop
 
->last update 7/6/2022.    
+>last update 7/7/2022.    
 

@@ -13,4 +13,7 @@ public class Stylist extends Employee implements actions{
         System.out.println("Method to  add at  the schedule a Stylists by default are 2 as well, and work from Monday to Saturday\n" +
                 "until 4PM ");
     }
+
+
+ 
 }
