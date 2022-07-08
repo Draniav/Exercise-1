@@ -1,6 +1,6 @@
 package VetPet.Employee;
 
-public class Doctor  extends Employee implements actions{
+public class Doctor  extends Employee implements agenda {
 
 
     public Doctor(String name, String surname){
@@ -14,5 +14,11 @@ public class Doctor  extends Employee implements actions{
         System.out.println("Method to  add at  the schedule a  By default, there\n" +
                 "are only two doctors from Monday to Wednesday. From Friday to Saturday, there is\n" +
                 "another doctor.");
+    }
+
+    @Override
+    public void horasExtra() {
+
+
     }
 }

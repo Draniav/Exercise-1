@@ -33,7 +33,7 @@ public class Inventory {
     @Override
     public String toString() {
 
-        return "Song ID  " + id + " |" + name + " | " + presentation + " |  " + usage + "    | " + quantity + " | " + stock +"  | ";
+        return "Product ID  " + id + " |" + name + " | " + presentation + " |  " + usage + "    | " + quantity + " | " + stock +"  | ";
     }
 
     /**

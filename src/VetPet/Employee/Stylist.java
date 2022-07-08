@@ -1,6 +1,6 @@
 package VetPet.Employee;
 
-public class Stylist extends Employee implements actions{
+public class Stylist extends Employee implements agenda {
 
 
     public Stylist(String name, String surname){
@@ -14,6 +14,9 @@ public class Stylist extends Employee implements actions{
                 "until 4PM ");
     }
 
+    @Override
+    public void horasExtra() {
+        System.out.println("code for calculate the extras");
+    }
 
- 
 }

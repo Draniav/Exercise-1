@@ -1,6 +1,7 @@
 package VetPet.Employee;
 
-public interface actions {
+public interface agenda {
 
      void schedule();
+     void horasExtra();
 }
