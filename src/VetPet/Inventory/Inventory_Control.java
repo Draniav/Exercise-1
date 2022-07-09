@@ -2,6 +2,11 @@ package VetPet.Inventory;
 
 import java.util.ArrayList;
 
+/*
+This class containes the 'stock' of the store as mentioend in the exrceis we will handle
+Three types of medicines: Pills, Syrups and Pet-care, wich is an ArrayList that will contain
+the information and will be used as our 'data base'
+*/
 public class Inventory_Control {
 
     public ArrayList upLoadInventaryList(ArrayList<Inventory> myInventoryList) {
