@@ -1,7 +1,7 @@
 package VetPet;
 
 import java.util.Arrays;
-
+import java.util.Scanner;
 
 
 public class Main {
@@ -13,11 +13,16 @@ public class Main {
     //    Messages.menuMenu();
 
         //input by  keyboard the option , the app reads in  the variable "menu"
-        int menu = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("witch menu do u want?");
+        int menu = sc.nextInt();
+//while 2
+        //try
 
         switch(menu){
             case 1:
                 Messages.menuInventory();
+
                 break;
             case 2:
                 Messages.menuSchedule();
@@ -32,6 +37,8 @@ public class Main {
                 System.exit(0);
                 break;
             default:
+
+
                 break;
         }
 

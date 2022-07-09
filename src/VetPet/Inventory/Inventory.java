@@ -1,12 +1,10 @@
-package VetPet.Invetory;
-
-import java.util.Date;
+package VetPet.Inventory;
 
 public class Inventory {
     private int id;
     private String name;
-    private String presentation;
-    private Boolean usage;
+    private String presentation;//Pills, syrup, pet-care
+    private String usage;//Veterinarian/Human
     private Integer quantity;
     private Integer stock;
 
@@ -16,7 +14,7 @@ public class Inventory {
      *
 
      */
-    public Inventory(int id, String name, String presentation, Boolean usage, Integer quantity, Integer stock) {
+    public Inventory(int id, String name, String presentation, String usage, Integer quantity, Integer stock) {
         this.id = id;
         this.name = name;
         this.presentation = presentation;
@@ -65,11 +63,11 @@ public class Inventory {
         this.presentation = presentation;
     }
 
-    public Boolean getUsage() {
+    public String getUsage() {
         return usage;
     }
 
-    public void setUsage(Boolean usage) {
+    public void setUsage(String usage) {
         this.usage = usage;
     }
 
