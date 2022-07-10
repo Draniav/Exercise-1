@@ -5,9 +5,9 @@ import VetPet.Messages;
 import java.util.ArrayList;
 
 /*
-This class containes the 'stock' of the store as mentioend in the exrceis we will handle
-Three types of medicines: Pills, Syrups and Pet-care, wich is an ArrayList that will contain
-the information and will be used as our 'data base'
+This class contains the 'stock' of the store as mentioned in the exercise we will handle
+Three types of medicines: Pills, Syrups and Pet-care, witch is an ArrayList that will contain
+the information and will be used as our 'database'
 */
 public class Inventory_Control {
 
@@ -44,7 +44,7 @@ public class Inventory_Control {
     /**
      * Show items
      */
-    public ArrayList showInvetory(ArrayList<Inventory> myInventoryList) {
+    public ArrayList showInventory(ArrayList<Inventory> myInventoryList) {
 
 
         Messages.table();
@@ -59,7 +59,7 @@ public class Inventory_Control {
 
     public ArrayList deleteItemInvetory(ArrayList<Inventory> myInventoryList) {
         Messages.table();
-        showInvetory(myInventoryList);
+        showInventory(myInventoryList);
 
         for (int i = 0; i < myInventoryList.size(); i++) {
             System.out.println(myInventoryList.get(i) + "will be erased");

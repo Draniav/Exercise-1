@@ -2,23 +2,23 @@ package VetPet.Schedule;
 
 public class Schedule {
 
-    private  int idAppointment;
+    private int idAppointment;
     private String hour;
     private String day;
     private String month;
     private String year;
-    private String typeOfAppintment; //medical or asthetic
-    private String  activeDoctor;
+    private String typeOfAppointment; //medical or aesthetic
+    private String activeDoctor;
     private String dniOwner;
-    private  String patientName
+    private String patientName;
 
-    public Schedule(int idAppointment, String hour, String day, String month, String year, String typeOfAppintment, String activeDoctor, String dniOwner, String patientName) {
+    public Schedule(int idAppointment, String hour, String day, String month, String year, String typeOfAppointment, String activeDoctor, String dniOwner, String patientName) {
         this.idAppointment = idAppointment;
         this.hour = hour;
         this.day = day;
         this.month = month;
         this.year = year;
-        this.typeOfAppintment = typeOfAppintment;
+        this.typeOfAppointment = typeOfAppointment;
         this.activeDoctor = activeDoctor;
         this.dniOwner = dniOwner;
         this.patientName = patientName;
@@ -27,15 +27,7 @@ public class Schedule {
     @Override
     public String toString() {
 
-        return "Id of appintment  " + idAppointment + " |" + hour + " | " + day + " |  " + month + "    | " + year + " | " + typeOfAppintment + "  | " + activeDoctor +"  | " + dniOwner +"  | " + patientName +"  | ";
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        return "Id of appintment  " + idAppointment + " |" + hour + " | " + day + " |  " + month + "    | " + year + " | " + typeOfAppointment + "  | " + activeDoctor + "  | " + dniOwner + "  | " + patientName + "  | ";
     }
 
     public int getIdAppointment() {
@@ -79,11 +71,11 @@ public class Schedule {
     }
 
     public String getTypeOfAppintment() {
-        return typeOfAppintment;
+        return typeOfAppointment;
     }
 
-    public void setTypeOfAppintment(String typeOfAppintment) {
-        this.typeOfAppintment = typeOfAppintment;
+    public void setTypeOfAppintment(String typeOfAppointment) {
+        this.typeOfAppointment = typeOfAppointment;
     }
 
     public String getActiveDoctor() {
@@ -94,12 +86,12 @@ public class Schedule {
         this.activeDoctor = activeDoctor;
     }
 
-    public String getIdPatient() {
-        return idPatient;
+    public String getDniOwner() {
+        return dniOwner;
     }
 
-    public void setIdPatient(String idPatient) {
-        this.idPatient = idPatient;
+    public void setDniOwner(String dniOwner) {
+        this.dniOwner = dniOwner;
     }
 
     public String getPatientName() {
@@ -108,53 +100,5 @@ public class Schedule {
 
     public void setPatientName(String patientName) {
         this.patientName = patientName;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPresentation() {
-        return presentation;
-    }
-
-    public void setPresentation(String presentation) {
-        this.presentation = presentation;
-    }
-
-    public String getUsage() {
-        return usage;
-    }
-
-    public void setUsage(String usage) {
-        this.usage = usage;
-    }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
-    public Integer getStock() {
-        return stock;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
-
-    public String getDniOwner() {
-        return dniOwner;
-    }
-
-    public void setDniOwner(String dniOwner) {
-        this.dniOwner = dniOwner;
     }
 }
