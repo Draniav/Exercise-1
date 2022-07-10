@@ -27,7 +27,8 @@ public class Main {
         System.out.println("witch menu do u want?");
         int menu = sc.nextInt();
         /**
-         * Create switch case to 
+         * Create switch case to make the user interface
+         * 
          */
         switch (menu) {
             case 1:
