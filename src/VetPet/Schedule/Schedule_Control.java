@@ -6,18 +6,9 @@ public class Schedule_Control {
 
     public ArrayList upLoadScheduleList(ArrayList<Schedule> myScheduleList) {
 
-
-        myScheduleList.add(new Inventory(0, "ibuprofen      ", "Pill", "Human", 8, 3));
-        myScheduleList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
-        myScheduleList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
-
-
-        /**
-         * Scrolls through the items in stock and changes the
-         * ids to these in order to be used by the other methods.
-         */
-
-        for (int i = 0; i < myInventoryList.size(); i++) {
+        myScheduleList.add(new Schedule(0, "9:30", "07", "07", "2022", "Asthetic", "000001", "Doctor1", "1121954001", "pepe"));
+        
+        for (int i = 0; i < myScheduleList.size(); i++) {
             myInventoryList.get(i).setId(i + 1);
         }
 

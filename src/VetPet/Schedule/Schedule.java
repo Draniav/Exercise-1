@@ -2,42 +2,112 @@ package VetPet.Schedule;
 
 public class Schedule {
 
+    private  int idAppointment;
     private String hour;
     private String day;
     private String month;
     private String year;
     private String typeOfAppintment; //medical or asthetic
     private String  activeDoctor;
-    private String IdPatient;
+    private String dniOwner;
+    private  String patientName
 
-    public Schedule(String hour, String day, String month, String year, String typeOfAppintment, String activeDoctor, String idPatient) {
+    public Schedule(int idAppointment, String hour, String day, String month, String year, String typeOfAppintment, String activeDoctor, String dniOwner, String patientName) {
+        this.idAppointment = idAppointment;
         this.hour = hour;
         this.day = day;
         this.month = month;
         this.year = year;
         this.typeOfAppintment = typeOfAppintment;
         this.activeDoctor = activeDoctor;
-        IdPatient = idPatient;
+        this.dniOwner = dniOwner;
+        this.patientName = patientName;
     }
 
-   
     @Override
     public String toString() {
 
-        return "Product ID  " + id + " |" + name + " | " + presentation + " |  " + usage + "    | " + quantity + " | " + stock +"  | ";
+        return "Id of appintment  " + idAppointment + " |" + hour + " | " + day + " |  " + month + "    | " + year + " | " + typeOfAppintment + "  | " + " | " + idPatient +"  | " + activeDoctor +"  | " + idPatient +"  | " + patientName +"  | ";
     }
 
-    /**
-     * we use the get and set methods to display and modify the value of attributes
-     *
-     * @return returns the value assigned or that we want to display
-     */
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getIdAppointment() {
+        return idAppointment;
+    }
+
+    public void setIdAppointment(int idAppointment) {
+        this.idAppointment = idAppointment;
+    }
+
+    public String getHour() {
+        return hour;
+    }
+
+    public void setHour(String hour) {
+        this.hour = hour;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getTypeOfAppintment() {
+        return typeOfAppintment;
+    }
+
+    public void setTypeOfAppintment(String typeOfAppintment) {
+        this.typeOfAppintment = typeOfAppintment;
+    }
+
+    public String getActiveDoctor() {
+        return activeDoctor;
+    }
+
+    public void setActiveDoctor(String activeDoctor) {
+        this.activeDoctor = activeDoctor;
+    }
+
+    public String getIdPatient() {
+        return idPatient;
+    }
+
+    public void setIdPatient(String idPatient) {
+        this.idPatient = idPatient;
+    }
+
+    public String getPatientName() {
+        return patientName;
+    }
+
+    public void setPatientName(String patientName) {
+        this.patientName = patientName;
     }
 
     public String getName() {
