@@ -26,7 +26,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("witch menu do u want?");
         int menu = sc.nextInt();
-
+        /**
+         * Create switch case to 
+         */
         switch (menu) {
             case 1:
                 int opt = 1;
