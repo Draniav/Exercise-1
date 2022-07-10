@@ -1,15 +1,15 @@
-package VetPet.Inventory;
+package VetPet.Schedule;
 
 import java.util.ArrayList;
 
-public class Inventory_Control {
+public class Schedule_Control {
 
-    public ArrayList upLoadInventaryList(ArrayList<Inventory> myInventoryList) {
+    public ArrayList upLoadScheduleList(ArrayList<Schedule> myScheduleList) {
 
 
-        myInventoryList.add(new Inventory(0, "ibuprofen      ", "Pill", "Human", 8, 3));
-        myInventoryList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
-        myInventoryList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
+        myScheduleList.add(new Inventory(0, "ibuprofen      ", "Pill", "Human", 8, 3));
+        myScheduleList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
+        myScheduleList.add(new Inventory(0, "maxiperro      ", "Pet_care", "Veterinarian", 5, 1));
 
 
         /**

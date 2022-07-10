@@ -1,8 +1,9 @@
-package VetPet.Inventory;
+package VetPet.Schedule;
 
-public class Inventory {
+public class Schedule {
     private int id;
-    private String name;
+
+    private String day;
     private String presentation;//Pills, syrup, pet-care
     private String usage;//Veterinarian/Human
     private Integer quantity;
@@ -14,9 +15,9 @@ public class Inventory {
      *
 
      */
-    public Inventory(int id, String name, String presentation, String usage, Integer quantity, Integer stock) {
+    public Schedule(int id, String day, String presentation, String usage, Integer quantity, Integer stock) {
         this.id = id;
-        this.name = name;
+        this.day = day;
         this.presentation = presentation;
         this.usage = usage;
         this.quantity = quantity;
