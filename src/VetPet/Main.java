@@ -63,7 +63,37 @@ public class Main {
 
             case 2:
                 Messages.menuSchedule();
+                opt = 1;
+                while (opt == 1){
+                    Messages.menuInventory();
+                    System.out.println("witch menu do u want?");
+                    menu = sc.nextInt();
+                    switch (menu) {
+                        case 1:
+                            SC.addSchedule(MyScheduleList);
+                            break;
+                        case 2:
+                            SC.showSchedule(MyScheduleList);
+                            break;
+                        case 3:
+                            //Edit
+                           // SC.addSchedule(MyScheduleList);
+                            break;
+                        case 4:
 
+                            SC.deleteSchedule(MyScheduleList);
+                            break;
+                        case 0:
+
+                            System.exit(0);
+                            break;
+
+                        default:
+                            System.out.println("ERROR, only  type numbers between 0 y 4");
+                            break;
+
+                    }
+                }
 
 
 

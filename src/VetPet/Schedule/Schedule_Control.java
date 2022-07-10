@@ -1,6 +1,9 @@
 package VetPet.Schedule;
 
+import VetPet.Messages;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Schedule_Control {
 
@@ -49,12 +52,14 @@ public ArrayList showSchedule(ArrayList<Schedule> myScheduleList) {
     public ArrayList addSchedule(ArrayList<Schedule> myScheduleList) {
         Messages.table();
 
-        myScheduleList.add(new Schedule(0, "Example Added   ", "Example", "Example", 0, 0));
+        myScheduleList.add(new Schedule(0, "0:00", "1", "1", "0", "0","ANy name","ABC123","Any Patiente name"));
 
 
-        myScheduleList.get(myScheduleList.size()-1).setId(myScheduleList.size());
+        myScheduleList.get(myScheduleList.size()-1).setIdAppointment(myScheduleList.size());
 
 
+
+        showSchedule(myScheduleList);
 
 
 
