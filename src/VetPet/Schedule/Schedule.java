@@ -1,34 +1,26 @@
 package VetPet.Schedule;
 
 public class Schedule {
-    private int id;
 
+    private String hour;
     private String day;
-    private String presentation;//Pills, syrup, pet-care
-    private String usage;//Veterinarian/Human
-    private Integer quantity;
-    private Integer stock;
+    private String month;
+    private String year;
+    private String typeOfAppintment; //medical or asthetic
+    private String  activeDoctor;
+    private String IdPatient;
 
-
-    /**
-     * attributes are initialized for use in the program
-     *
-
-     */
-    public Schedule(int id, String day, String presentation, String usage, Integer quantity, Integer stock) {
-        this.id = id;
+    public Schedule(String hour, String day, String month, String year, String typeOfAppintment, String activeDoctor, String idPatient) {
+        this.hour = hour;
         this.day = day;
-        this.presentation = presentation;
-        this.usage = usage;
-        this.quantity = quantity;
-        this.stock = stock;
+        this.month = month;
+        this.year = year;
+        this.typeOfAppintment = typeOfAppintment;
+        this.activeDoctor = activeDoctor;
+        IdPatient = idPatient;
     }
 
-    /**
-     * the interface to display the attributes is used throughout the program
-     *
-     * @return
-     */
+   
     @Override
     public String toString() {
 
