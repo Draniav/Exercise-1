@@ -3,6 +3,7 @@ package VetPet.Inventory;
 import VetPet.Messages;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /*
 This class contains the 'stock' of the store as mentioned in the exercise we will handle
@@ -24,7 +25,6 @@ public class Inventory_Control {
         myInventoryList.add(new Inventory(0, "omega-3       ", "Pet-care", "Veterinary", 30, 8));
         myInventoryList.add(new Inventory(0, "Greyhound      ", "Pet-care", "Veterinary", 10, 10));
         myInventoryList.add(new Inventory(0, "Neoplex      ", "Pet-care", "Veterinary", 5, 1));
-
 
 
         /**
@@ -58,13 +58,16 @@ public class Inventory_Control {
 
 
     public ArrayList deleteItemInvetory(ArrayList<Inventory> myInventoryList) {
-        Messages.table();
+        int i = 0;
+        Scanner sn = new Scanner(System.in);
+        i = sn.nextInt();
+
         showInventory(myInventoryList);
-
-        for (int i = 0; i < myInventoryList.size(); i++) {
-            System.out.println(myInventoryList.get(i) + "will be erased");
-        }
-
+        System.out.println("type the id to erase");
+        Messages.table();
+        System.out.println(myInventoryList.get(i) + "will be erased");
+        myInventoryList.remove(i-1);
+        showInventory(myInventoryList);
 
         System.out.println("===========================================================================================================================================================");
         return myInventoryList;
@@ -73,10 +76,15 @@ public class Inventory_Control {
     public ArrayList addInvetory(ArrayList<Inventory> myInventoryList) {
         Messages.table();
 
-        for (int i = 0; i < myInventoryList.size(); i++) {
-            //myInventoryList.get(i).setId(i + 1);
-            System.out.println(myInventoryList.get(i));
-        }
+        myInventoryList.add(new Inventory(0, "Example Added   ", "Example", "Example", 0, 0));
+
+
+            myInventoryList.get(myInventoryList.size()-1).setId(myInventoryList.size());
+
+
+
+
+
         System.out.println("===========================================================================================================================================================");
         return myInventoryList;
     }
