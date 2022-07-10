@@ -50,6 +50,7 @@ public class Messages {
     public static void menuLine() {
         System.out.println("==========================================================");
     }
+
     public static void menuMenu() {
         System.out.println("|               1- to Add.                               |");
         System.out.println("|               2- to See.                               |");
@@ -59,6 +60,7 @@ public class Messages {
         System.out.println("|               0- Exit program                          |");
         menuLine();
     }
+
     public static void menuMain() {
         menuLine();
         System.out.println("|           Hello Welcome to your SANIPETs'APP           |");
@@ -78,6 +80,7 @@ public class Messages {
         menuLine();
         menuMenu();
         menuLine();
+
     }
 
     public static void menuPatients() {
@@ -103,7 +106,6 @@ public class Messages {
         menuMenu();
         menuLine();
     }
-
 
 
     /**

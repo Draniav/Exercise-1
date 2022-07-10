@@ -57,7 +57,7 @@ public class Inventory_Control {
     }
 
 
-    public ArrayList deleteItemInvetory(ArrayList<Inventory> myInventoryList) {
+    public ArrayList deleteItemInventory(ArrayList<Inventory> myInventoryList) {
         int i = 0;
         Scanner sn = new Scanner(System.in);
         i = sn.nextInt();
@@ -73,17 +73,16 @@ public class Inventory_Control {
         return myInventoryList;
     }
 
-    public ArrayList addInvetory(ArrayList<Inventory> myInventoryList) {
+    public ArrayList addInventory(ArrayList<Inventory> myInventoryList) {
         Messages.table();
 
         myInventoryList.add(new Inventory(0, "Example Added   ", "Example", "Example", 0, 0));
 
-
-            myInventoryList.get(myInventoryList.size()-1).setId(myInventoryList.size());
-
+        myInventoryList.get(myInventoryList.size()-1).setId(myInventoryList.size());
 
 
 
+        showInventory(myInventoryList);
 
         System.out.println("===========================================================================================================================================================");
         return myInventoryList;
