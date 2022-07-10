@@ -15,10 +15,10 @@ public class Schedule_Control {
         myScheduleList.add(new Schedule(0, "12:30", "12", "07", "2022", "Asthetic", "000007", "Doctor1", "1121954001", "pupu"));
 
         for (int i = 0; i < myScheduleList.size(); i++) {
-            myInventoryList.get(i).setId(i + 1);
+            myScheduleList.get(i).setId(i + 1);
         }
 
-        return myInventoryList;
+        return myScheduleList;
 
     }
 

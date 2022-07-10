@@ -27,7 +27,7 @@ public class Schedule {
     @Override
     public String toString() {
 
-        return "Id of appintment  " + idAppointment + " |" + hour + " | " + day + " |  " + month + "    | " + year + " | " + typeOfAppintment + "  | " + " | " + idPatient +"  | " + activeDoctor +"  | " + idPatient +"  | " + patientName +"  | ";
+        return "Id of appintment  " + idAppointment + " |" + hour + " | " + day + " |  " + month + "    | " + year + " | " + typeOfAppintment + "  | " + activeDoctor +"  | " + dniOwner +"  | " + patientName +"  | ";
     }
 
     public int getId() {
@@ -148,5 +148,13 @@ public class Schedule {
 
     public void setStock(Integer stock) {
         this.stock = stock;
+    }
+
+    public String getDniOwner() {
+        return dniOwner;
+    }
+
+    public void setDniOwner(String dniOwner) {
+        this.dniOwner = dniOwner;
     }
 }
